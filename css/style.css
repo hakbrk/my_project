@@ -1,0 +1,100 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+#header
+{
+    background-image: linear-gradient( to right, #024E6F, #e1e4e6);
+    border-bottom:5px inset #e1e4e6;
+    position: fixed !important;
+    z-index: 1000000;
+}
+
+.navbar-nav
+{
+    text-align: right;
+}
+
+.dropdown-menu
+{
+    text-align: right;
+}
+
+.menu-bar .navbar-toggler 
+{
+    padding-right: 0;
+    outline: none;
+    border: none;
+}
+
+.dropdown-menue show
+{
+    padding-right: 0;
+    outline: none;
+    border: none;
+}
+
+.nav-link
+{
+    font-size: 16px;
+    margin: 2px;
+    color: rgb(18, 20, 22) !important;
+}
+
+.navbar-brand
+{
+    color: rgb(18, 20, 22) !important;
+    font-family: Georgia, Times, "Times New Roman", serif; 
+    font-size: 23px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 23px;
+}
+
+.nav-link
+{
+    font-size: 20px;
+}
+
+.banner
+{
+    height: 900px;
+    background-image: url('../img/world_map.png');
+    background-size: cover;
+    background-position: center;
+    padding-top: 80px
+}
+
+#main_section
+{
+    margin-top: -750px
+}
+
+#basics
+{
+    background-color: aliceblue;
+    opacity: 0.5;
+    box-sizing: border-box;
+    border-radius: .5%
+}
+#place-holder1
+{
+    background-color: aliceblue;
+    opacity: 0.5;
+    box-sizing: border-box;
+    height: 400px;
+    padding: 5px;
+    border-radius: .5%;
+    margin-left: 10px
+}
+
+h1 { font-family: Georgia, Times, "Times New Roman", serif; font-size: 24px; font-style: bold; font-variant: normal; font-weight: 700; line-height: 24px; } 
+h3 { font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif; font-size: 19px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 24px; } 
+p { font-family: Georgia, Times, "Times New Roman", serif; font-size: 15px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 24px; } 
+blockquote { font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif; font-size: 19px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 24px; } 
+pre { font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 24px; }
+em { font-family: Georgia, Times, "Times New Roman", serif; font-size: 15px; font-style: italic; font-variant: normal; font-weight: 400; line-height: 24px; }
