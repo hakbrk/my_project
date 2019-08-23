@@ -64,6 +64,7 @@
 {
     height: 900px;
     background-image: url('../img/world_map.png');
+    background-color: #024E6F;
     background-size: cover;
     background-position: center;
     padding-top: 80px
