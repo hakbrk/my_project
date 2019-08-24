@@ -30,11 +30,19 @@
     border: none;
 }
 
-.dropdown-menue show
+.dropdown-menu.show
 {
     padding-right: 0;
     outline: none;
     border: none;
+    box-sizing: content-box !important;
+    width: fit-content !important;
+    background: rgba(224, 216, 216, 0.4);
+}
+
+#top .dropdown-text
+{
+    color: rgb(0,0,0,0.1), !important;
 }
 
 .nav-link
@@ -76,8 +84,8 @@
 
 #basics
 {
-    background-color: aliceblue;
-    opacity: 0.5;
+    background: rgb(240, 248, 255, 0.5);
+    color: black !important;
     box-sizing: border-box;
     border-radius: .5%;
     padding-top: 10px;
