@@ -64,7 +64,6 @@
 {
     height: 900px;
     background-image: url('../img/world_map.png');
-    background-color: #024E6F;
     background-size: cover;
     background-position: center;
     padding-top: 80px
@@ -99,3 +98,8 @@ p { font-family: Georgia, Times, "Times New Roman", serif; font-size: 15px; font
 blockquote { font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif; font-size: 19px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 24px; } 
 pre { font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 24px; }
 em { font-family: Georgia, Times, "Times New Roman", serif; font-size: 15px; font-style: italic; font-variant: normal; font-weight: 400; line-height: 24px; }
+
+#background
+{
+    background-color: #024E6F;
+}
