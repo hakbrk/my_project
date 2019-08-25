@@ -12,6 +12,16 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    function setIframeSource() {
+      var theSelect = document.getElementById('location');
+      var theIframe = document.getElementById('myIframe');
+      var theUrl;
+      
+      theUrl = theSelect.options[theSelect.selectedIndex].value;
+      theIframe.src = theUrl;
+    }
+  </script>
 
 </head>
 <body>
@@ -19,7 +29,7 @@
 <div class="container-fluid" id="header">
     
       <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#">Economic Freedom</a>
+        <a class="navbar-brand" href="index.html">Economic Freedom</a>
         <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -37,10 +47,10 @@
                 </div>
               </div>
             <li class="nav-item">
-              <a class="nav-link" href="#">Comparisons</a>
+              <a class="nav-link" href="comparisons_pg.html">Comparisons</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Data</a>
+              <a class="nav-link" href="data_pg.html">Data</a>
             </li>
             </li>
           </ul>
@@ -62,12 +72,26 @@
             In an economically free society, the primary role of government is to protect individuals and their property from aggression by others. The EFW index is designed to measure the extent to which the institutions and policies of a nation are consistent with this protective function and the freedom of individuals to make their own economic decisions. Put another way, the EFW measure is an effort to identify how closely the institutions and policies of a country correspond with a limited government ideal, where the government protects property rights and arranges for the provision of a limited set of “public goods” such as national defense and access to money of sound value, but little beyond these core functions.
             </p>
           <p>
-            In order to receive a high EFW rating, a country must provide secure protection of privately owned property, a legal system that treats all equally, even-handed enforcement of contracts, and a stable monetary environment. It also must keep taxes low, refrain from creating barriers to both domestic and international trade, and rely more fully on markets rather than government spending and regulation to allocate goods and resources.  (<em>The Fraser Institute, 2019</em>).
+            In order to receive a high EFW rating, a country must provide secure protection of privately owned property, a legal system that treats all equally, even-handed enforcement of contracts, and a stable monetary environment. It also must keep taxes low, refrain from creating barriers to both domestic and international trade, and rely more fully on markets rather than government spending and regulation to allocate goods and resources.  (<a href="https://www.fraserinstitute.org/economic-freedom/economic-freedom-basics"><em>The Fraser Institute, 2019</em></a>).
             </p>
       </div>
-      <div class="col" id="place-holder1">
-          <a class="place-holder1" href="#">This is place holder1</a>
-    </div>
+<div class="container" id="maps">
+    <form id="form1" method="post">
+        <label><select id="location" onchange="setIframeSource()"> 
+           <option value="maps/Economic Freedom Index, 2015.html">Select a Year</option> 
+           <option value="maps/Economic Freedom Index, 2015.html">2015</option> 
+           <option value="maps/Economic Freedom Index, 2015.html">2010</option>
+           <option value="maps/Economic Freedom Index, 2015.html">1995</option>
+           <option value="maps/Economic Freedom Index, 1990.html">1990</option> 
+           <option value="maps/Economic Freedom Index, 1985.html">1985</option> 
+           <option value="maps/Economic Freedom Index, 1980.html">1980</option>
+           <option value="maps/Economic Freedom Index, 1975.html">1975</option> 
+           <option value="maps/Economic Freedom Index, 1975.html">1970</option>
+        </select></label>
+     </form>
+      
+     <iframe id="myIframe" src="maps/Economic Freedom Index, 2015.html" frameborder="0" marginwidth="0" marginheight="0" width="950" height="650"></iframe>
+</div>
 </div>
 </div>
 </div>

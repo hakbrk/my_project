@@ -37,12 +37,12 @@
     border: none;
     box-sizing: content-box !important;
     width: fit-content !important;
-    background: rgba(224, 216, 216, 0.4);
+    background: rgba(224, 216, 216, 0.8);
 }
 
 #top .dropdown-text
 {
-    color: rgb(0,0,0,0.1), !important;
+    color: rgb(0,0,0), !important;
 }
 
 .nav-link
@@ -54,7 +54,7 @@
 
 .navbar-brand
 {
-    color: rgb(18, 20, 22) !important;
+    color: aliceblue !important;
     font-family: Georgia, Times, "Times New Roman", serif; 
     font-size: 23px; 
     font-style: normal; 
@@ -104,7 +104,7 @@
 
 h1 { font-family: Georgia, Times, "Times New Roman", serif; font-size: 24px; font-style: bold; font-variant: normal; font-weight: 700; line-height: 24px; } 
 h3 { font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif; font-size: 19px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 24px; } 
-p { font-family: Georgia, Times, "Times New Roman", serif; font-size: 15px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 24px; } 
+p { font-family: Georgia, Times, "Times New Roman", serif; font-size: 15px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 24px; color: black } 
 blockquote { font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif; font-size: 19px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 24px; } 
 pre { font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 24px; }
 em { font-family: Georgia, Times, "Times New Roman", serif; font-size: 15px; font-style: italic; font-variant: normal; font-weight: 400; line-height: 24px; }
@@ -113,4 +113,14 @@ em { font-family: Georgia, Times, "Times New Roman", serif; font-size: 15px; fon
 {
     background-color: #024E6F;
     padding-bottom: 150px;
+}
+
+a:hover { 
+    text-decoration: underline !important;
+    background-color: transparent !important;
+  }
+
+#form1
+{
+    padding-top: 50px;
 }
