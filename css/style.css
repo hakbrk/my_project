@@ -1,16 +1,7 @@
-*
-{
-    padding: 0;
-    margin: 0;
-    font-family: sans-serif;
-}
-
 #header
 {
     background-image: linear-gradient( to right, #024E6F, #e1e4e6);
-    border-bottom:5px inset #e1e4e6;
-    position: fixed !important;
-    z-index: 1000000;
+    border-bottom:1px inset #e1e4e6;
 }
 
 .navbar-nav
@@ -68,38 +59,34 @@
     font-size: 20px;
 }
 
-.banner
+a:hover 
+{ 
+    text-decoration: underline !important;
+    background-color: transparent !important;
+}
+#main-section
 {
-    height: 900px;
     background-image: url('../img/world_map.png');
     background-size: cover;
+    background-color: #024E6F;
     background-position: center;
-    padding-top: 80px
+    padding-top: 20px;
+    padding-bottom: 50px;
+
 }
 
-#main_section
-{
-    margin-top: -775px
-}
 
-#basics
+#body1
+
+
+#basics, #index, #data_intro
 {
     background: rgb(240, 248, 255, 0.5);
     color: black !important;
     box-sizing: border-box;
     border-radius: .5%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-#place-holder1
-{
-    background-color: aliceblue;
-    opacity: 0.5;
-    box-sizing: border-box;
-    height: 400px;
-    padding: 5px;
-    border-radius: .5%;
-    margin-left: 10px
+    margin:30px;
+    padding: 10px;
 }
 
 h1 { font-family: Georgia, Times, "Times New Roman", serif; font-size: 24px; font-style: bold; font-variant: normal; font-weight: 700; line-height: 24px; } 
@@ -108,19 +95,6 @@ p { font-family: Georgia, Times, "Times New Roman", serif; font-size: 15px; font
 blockquote { font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif; font-size: 19px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 24px; } 
 pre { font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 24px; }
 em { font-family: Georgia, Times, "Times New Roman", serif; font-size: 15px; font-style: italic; font-variant: normal; font-weight: 400; line-height: 24px; }
-
-#background
-{
-    background-color: #024E6F;
-    padding-bottom: 150px;
-}
-
-a:hover { 
-    text-decoration: underline !important;
-    background-color: transparent !important;
-  }
-
-
 
 .iframe-container
 {
@@ -131,15 +105,21 @@ a:hover {
 
 .iframe-container iframe
 {
-    border: 0;
     height: 100%;
     left: 0;
     position: absolute;
     top: 0;
     width: 100%;
+    border: none
 }
 
 .iframe-container-4x3
 {
     padding-top: 75%;
+}
+#form1
+{
+    text-align: auto;
+    width: 80%;
+    margin-left: 30px
 }

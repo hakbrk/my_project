@@ -1,100 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Data Visualization - Hawkins</title>
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Economic Freedom - Hawkins</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  <script type="text/javascript">
-    function setIframeSource() {
-      var theSelect = document.getElementById('location');
-      var theIframe = document.getElementById('myIframe');
-      var theUrl;
-      
-      theUrl = theSelect.options[theSelect.selectedIndex].value;
-      theIframe.src = theUrl;
-    }
-  </script>
-
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        function setIframeSource() {
+          var theSelect = document.getElementById('mapselect');
+          var theIframe = document.getElementById('myIframe');
+          var theUrl;
+          
+          theUrl = theSelect.options[theSelect.selectedIndex].value;
+          theIframe.src = theUrl;
+        }
+    </script>
+    
 </head>
 <body>
-<div class="container-fluid" id="background">
-<div class="container-fluid" id="header">
-    
-      <nav class="navbar navbar-expand-lg navbar-light">
+<div class="container-fluid">
+ <div class="row" id="header">
+  <div class="col">
+    <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="index.html">Economic Freedom</a>
-        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav ml-auto">
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto">
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Plots
-              </a>
-              <div class="dropdown-menu ml-auto" aria-labelledby="navbarDropdownMenuLink">
-                <div class="dropdown-text" id="top">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-              </div>
-            <li class="nav-item">
-              <a class="nav-link" href="comparisons_pg.html">Comparisons</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="data_pg.html">Data</a>
-            </li>
-            </li>
-          </ul>
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Plots
+                </a>
+        <div class="dropdown-menu ml-auto" aria-labelledby="navbarDropdownMenuLink">
+        <div class="dropdown-text" id="top">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
         </div>
-      </nav>
-
+        </div>
+            <li class="nav-item">
+                <a class="nav-link" href="comparisons_pg.html">Comparisons</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="data_pg.html">Data</a>
+            </li>
+            </li>
+        </ul>
     </div>
-
-<div class="banner text-center">
+    </nav>
+  </div>
+ </div>
 </div>
-<div class="container" id="main_section">
-    <div class="row">
-      <div class="col" id="basics">
-          <h3>Economic Freedom Basics</h3>
-          <p>
+<div class="container-fluid" id="main-section">
+    <div class="row" id="body1">
+        <div class="col" id="basics">
+            <h3>Economic Freedom Basics</h3>
+            <p>
             The cornerstones of economic freedom are (1) personal choice, (2) voluntary exchange coordinated by markets, (3) freedom to enter and compete in markets, and (4) protection of persons and their property from aggression by others. Individuals have economic freedom when property they acquire without the use of force, fraud, or theft is protected from physical invasions by others and they are free to use, exchange, or give their property as long as their actions do not violate the identical rights of others. Individuals are free to choose, trade, and cooperate with others, and compete as they see fit.
             </p>
-          <p>
+            <p>
             In an economically free society, the primary role of government is to protect individuals and their property from aggression by others. The EFW index is designed to measure the extent to which the institutions and policies of a nation are consistent with this protective function and the freedom of individuals to make their own economic decisions. Put another way, the EFW measure is an effort to identify how closely the institutions and policies of a country correspond with a limited government ideal, where the government protects property rights and arranges for the provision of a limited set of “public goods” such as national defense and access to money of sound value, but little beyond these core functions.
             </p>
-          <p>
+            <p>
             In order to receive a high EFW rating, a country must provide secure protection of privately owned property, a legal system that treats all equally, even-handed enforcement of contracts, and a stable monetary environment. It also must keep taxes low, refrain from creating barriers to both domestic and international trade, and rely more fully on markets rather than government spending and regulation to allocate goods and resources.  (<a href="https://www.fraserinstitute.org/economic-freedom/economic-freedom-basics"><em>The Fraser Institute, 2019</em></a>).
             </p>
-      </div>
-<div class="container" id="maps">
-    <form id="form1" method="post">
-        <label><select id="location" onchange="setIframeSource()"> 
-           <option value="maps/Economic Freedom Index, 2015.html">Select a Year</option> 
-           <option value="maps/Economic Freedom Index, 2015.html">2015</option> 
-           <option value="maps/Economic Freedom Index, 2015.html">2010</option>
-           <option value="maps/Economic Freedom Index, 2015.html">1995</option>
-           <option value="maps/Economic Freedom Index, 1990.html">1990</option> 
-           <option value="maps/Economic Freedom Index, 1985.html">1985</option> 
-           <option value="maps/Economic Freedom Index, 1980.html">1980</option>
-           <option value="maps/Economic Freedom Index, 1975.html">1975</option> 
-           <option value="maps/Economic Freedom Index, 1975.html">1970</option>
-        </select></label>
-     </form>
-    <div class="iframe-container">
-     <iframe id="myIframe" src="maps/Economic Freedom Index, 2015.html"></iframe>
+        </div>
+        <div class="col" id="index">
+            <h3>Economic Freedom Index</h3>
+            <p>
+            Now that we have learned what Economic Freedom is, how can we measure it.  The Fraser Institute has developed an index which assigns a value between 0-10 to each country.  A value of 10 indicated that the country exhibits a high level of Economic Freedom.  Below is a brief explanation regarding the 5 different areas that are used to determine a countries Economic Freedom Index.
+            </p>
+            <p>
+            The index published in Economic Freedom of the World measures the degree to which the policies and institutions of countries are supportive of economic freedom. The cornerstones of economic freedom are personal choice, voluntary exchange, freedom to enter markets and compete, and security of the person and privately owned property. Forty-two data points are used to construct a summary index and to measure the degree of economic freedom in five broad areas.
+            </p>
+            <ul>
+                <li>Area 1: Size of Government - As government spending, taxation, and the size of government-controlled enterprises increase, government decision-making is substituted for individual choice and economic freedom is reduced.</li>
+                <li>Area 2: Legal System and Property Rights - Protection of persons and their rightfully acquired property is a central element of both economic freedom and civil society. Indeed, it is the most important function of government.</li>
+                <li>Area 3: Sound Money - Inflation erodes the value of rightfully earned wages and savings. Sound money is thus essential to protect property rights. When inflation is not only high but also volatile, it becomes difficult for individuals to plan for the future and thus use economic freedom effectively.</li>
+                <li>Area 4: Freedom to Trade Internationally - Freedom to exchange—in its broadest sense, buying, selling, making contracts, and so on—is essential to economic freedom, which is reduced when freedom to exchange does not include businesses and individuals in other nations.</li>
+                <li>Area 5: Regulation - Governments not only use a number of tools to limit the right to exchange internationally, they may also develop onerous regulations that limit the right to exchange, gain credit, hire or work for whom you wish, or freely operate your business.</li>
+            </ul>
+        </div>
     </div>
-</div>
-</div>
-</div>
+    <div class="row">
+        <div class="col" id="data_intro">
+            <h3>Visualization of Data</h3>
+            <p>Lets take a look at what Economic Freedom looks like around the workd using a few different methods.  First we'll use data sourced from The Fraser Institure.  The dataset available runs from 1970 to 2016.</p>
+        </div>
+    </div>
+    <div class="row" id="map">
+            <form id="form1" method="post">
+                    <label>
+                    <select id="mapselect" onchange="setIframeSource()">
+                        <option value="maps/Economic Freedom Index, 2016.html">Select a Year</option> 
+                        <option value="maps/Economic Freedom Index, 2016.html">2016</option>
+                        <option value="maps/Economic Freedom Index, 2015.html">2015</option>
+                        <option value="maps/Economic Freedom Index, 2014.html">2014</option>
+                        <option value="maps/Economic Freedom Index, 2013.html">2013</option>
+                        <option value="maps/Economic Freedom Index, 2012.html">2012</option>
+                        <option value="maps/Economic Freedom Index, 2011.html">2011</option>
+                        <option value="maps/Economic Freedom Index, 2010.html">2010</option>
+                        <option value="maps/Economic Freedom Index, 2009.html">2009</option> 
+                        <option value="maps/Economic Freedom Index, 2008.html">2008</option>
+                        <option value="maps/Economic Freedom Index, 2007.html">2007</option>
+                        <option value="maps/Economic Freedom Index, 2006.html">2006</option>
+                        <option value="maps/Economic Freedom Index, 2005.html">2005</option>
+                        <option value="maps/Economic Freedom Index, 2004.html">2004</option>
+                        <option value="maps/Economic Freedom Index, 2003.html">2003</option>
+                        <option value="maps/Economic Freedom Index, 2002.html">2002</option>
+                        <option value="maps/Economic Freedom Index, 2001.html">2001</option>
+                        <option value="maps/Economic Freedom Index, 2000.html">2000</option>
+                        <option value="maps/Economic Freedom Index, 1999.html">1999</option>
+                        <option value="maps/Economic Freedom Index, 1998.html">1998</option>
+                        <option value="maps/Economic Freedom Index, 1997.html">1997</option>
+                        <option value="maps/Economic Freedom Index, 1996.html">1996</option>
+                        <option value="maps/Economic Freedom Index, 1995.html">1995</option>
+                        <option value="maps/Economic Freedom Index, 1990.html">1990</option> 
+                        <option value="maps/Economic Freedom Index, 1985.html">1985</option> 
+                        <option value="maps/Economic Freedom Index, 1980.html">1980</option>
+                        <option value="maps/Economic Freedom Index, 1975.html">1975</option> 
+                        <option value="maps/Economic Freedom Index, 1975.html">1970</option>
+                    </select>
+                    </label>
+                </form>
+    </div>        
+        <div class="col-lg6 flex-container">
+        <div class="iframe-container">
+            <iframe id="myIframe" src="maps/Economic Freedom Index, 2016.html"></iframe>
+        </div>
+
+    </div>
 </div>
 </body>
 </html>
